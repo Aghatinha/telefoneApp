@@ -1,0 +1,7 @@
+{
+  "name": "telefoneApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
