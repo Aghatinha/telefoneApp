@@ -1,20 +1,80 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar color="dark">
+    <ion-title class="ion-text-center">
+      Contatos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="tertiary">
+  <div class="container" color="light">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-item (click)="navegar()" color="">
+      <ion-thumbnail slot="start" >
+        <img alt="Logo" src="assets/L7.png" />
+      </ion-thumbnail>
+      <div class="teste">
+        <h1>Pedro</h1>
+        <ion-label> ID: 1 <ion-label>
+            <p>Email: pedro@gmail.com</p>
+          </ion-label>
+        </ion-label>
+      </div>
+    </ion-item>
+
+    <ion-item (click)="navegar2()">
+      <ion-thumbnail slot="start" >
+        <img alt="Logo" src="assets/Jhon.png" />
+      </ion-thumbnail>
+      <div class="teste">
+        <h1>Daniel</h1>
+        <ion-label> ID: 2 <ion-label>
+            <p>Email: daniel@gmail.com</p>
+          </ion-label>
+        </ion-label>
+      </div>
+    </ion-item>
+
+
+  <ion-item (click)="navegar3()">
+    <ion-thumbnail slot="start" class="thumb">
+      <img alt="Logo" src="assets/Alice.png" />
+    </ion-thumbnail>
+    <div class="teste">
+      <h1>Alice</h1>
+      <ion-label> ID: 3 <ion-label>
+          <p>Email: alice@gmail.com</p>
+        </ion-label>
+      </ion-label>
+    </div>
+
+  </ion-item>
+
+
+  <ion-item (click)="navegar4()">
+    <ion-thumbnail slot="start" class="thumb">
+      <img alt="Logo" src="assets/Joao.png" />
+    </ion-thumbnail>
+    <div class="teste">
+      <h1>João</h1>
+      <ion-label> ID: 4 <ion-label>
+          <p>Email: joao@gmail.com</p>
+        </ion-label>
+      </ion-label>
+    </div>
+  </ion-item>
+
+  <ion-item (click)="navegar5()">
+    <ion-thumbnail slot="start" class="thumb">
+      <img alt="Logo" src="assets/Vi.png" />
+    </ion-thumbnail>
+    <div class="teste">
+      <h1>Vitória</h1>
+      <ion-label> ID: 5 <ion-label>
+          <p>Email: vitoria@gmail.com</p>
+        </ion-label>
+      </ion-label>
+    </div>
+  </ion-item>
   </div>
 </ion-content>
