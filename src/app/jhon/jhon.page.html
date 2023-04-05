@@ -1,13 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar (click)="voltar()">
-    <ion-title>Daniel</ion-title>
+<ion-header [translucent]="true" >
+  <ion-toolbar color="dark">
+    <ion-title (click)="voltar()" class="ion-text-center">Dados do Contato</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">jhon</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="tertiary">
+  <div id="header">
+    <h1></h1>
+    <img src="assets/Jhon.png" alt="logo" />
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Daniel</ion-card-title>
+      <ion-card-subtitle>(14)98112-1458</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      @ E-mail:daniel@gmail.com
+    </ion-card-content>
+  </ion-card>
+
+
 </ion-content>
